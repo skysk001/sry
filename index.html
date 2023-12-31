@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry</title>
+    <style>
+        body,
+        html {
+            display: block;
+            width: 100%;
+            height: 100%;
+            /* background: linear-gradient(red, black); */
+            background-image: url('https://bestanimations.com/media/many-hearts/1391146284gold-falling-hearts-animated-gif.gif');
+            background-size: 100% 100%;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-family: Inconsolata, monospace;
+        }
+
+        div {
+            background: linear-gradient(black red);
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 600;
+            font-size: 20px;
+            word-wrap: break-word;
+            border-radius: 6px;
+            box-shadow: 0px 0px 20px 0px;
+        }
+
+        .typing>* {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typingAnim 3s steps(50);
+        }
+
+        @keyframes typingAnim {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        p {
+            width: 100%;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+   <center>
+    <audio id="myAudio" controls>
+        <source src="sad.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+   
+
+   </center>
+    <div class="typing" style="background-color: rgb(219, 7, 7);text-align: justify;">
+        <section style="margin: 0 auto;margin-left: 10px;padding: 10px;">
+            <button id="playButton" style="background:linear-gradient(rgba(115, 255, 0, 0.692), rgba(187, 169, 12, 0.596));padding: 16px;float: right;border-radius: 10px;border:1px solid red;font-weight: bold;cursor: pointer;">Play Audio</button>
+            <h1><span>♥♥</span> Dear Wife,<span>♥♥</span>,</h1>
+            <p>I hope this message finds you well. I've been reflecting on recent events,<br> and I realize that my
+                actions have hurt you, and for that, I am truly sorry.
+            </p>
+            <p>
+                I want you to know that I take full responsibility for my mistakes, <br>and I deeply regret any pain or
+                frustration I may have caused. <br>My intention is never to hurt you, and I'm committed to making
+                <br>amends and learning from this experience.
+            </p>
+            <p>
+                I value our relationship immensely, and I understand the importance of trust and communication.<br> I am
+                willing to do whatever it takes to rebuild that trust and ensure that <br>we can move forward together
+                in a positive and healthy way.
+            </p>
+            <p>
+                Please let me know when you're ready to talk, and I'm here to listen. I love you, <br>and I'm dedicated
+                to making things right.
+            </p>
+
+            <br>
+            Sincerely,
+            <br>
+            <b>Sujeet Yadav</b>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $("#myAudio").hide()
+        window.addEventListener('load', function() {
+            var audio = document.getElementById("myAudio");
+            var playButton = document.getElementById("playButton");
+    
+            playButton.addEventListener('click', function() {
+                audio.play();
+            });
+        });
+    </script>
+</body>
+
+</html>
